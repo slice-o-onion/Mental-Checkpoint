@@ -185,7 +185,7 @@ tw-dialog-links{text-align:right;display:-ms-flexbox;display:flex;-ms-flex-pack:
 tw-backdrop{z-index:999996;position:fixed;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,.8);display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center}
 
 tw-backdrop~tw-backdrop{display:none}
-tw-link,.enchantment-link{cursor:pointer;color:#4169e1;font-weight:bold;text-decoration:none;transition:color .2s ease-in-out}
+tw-link,.enchantment-link{cursor:pointer;color:#ced3e2;font-weight:bold;text-decoration:none;transition:color .2s ease-in-out}
 tw-passage [style^=color] 
 tw-link:not(:hover),tw-passage [style*=" color"] 
 tw-link:not(:hover),tw-passage [style^=color][hover=true] 
@@ -194,15 +194,17 @@ tw-link:hover,tw-passage [style^=color] .enchantment-link:not(:hover),
 tw-passage [style*=" color"] .enchantment-link:not(:hover),
 tw-passage [style^=color][hover=true] .enchantment-link:hover,
 tw-passage [style*=" color"][hover=true] .enchantment-link:hover{color:inherit}
-tw-link:hover,.enchantment-link:hover{color:#00bfff}tw-link:active,.enchantment-link:active{color:#dd4b39}.visited{color:#6941e1}tw-passage [style^=color] .visited:not(:hover),
+tw-link:hover,.enchantment-link:hover{color:#d1a08d}tw-link:active,.enchantment-link:active{color:#bd8179}
+.visited{color:#6d6488}tw-passage [style^=color] .visited:not(:hover),
 tw-passage [style*=" color"] .visited:not(:hover),
 tw-passage [style^=color][hover=true] .visited:hover,
 tw-passage [style*=" color"][hover=true] .visited:hover{color:inherit}
-.visited:hover{color:#e3e}tw-broken-link{color:#933;border-bottom:2px solid #933;cursor:not-allowed}
+.visited:hover{color:rgb(134, 125, 125)}tw-broken-link{color:#933;border-bottom:2px solid #933;cursor:not-allowed}
 tw-passage [style^=color] tw-broken-link:not(:hover),tw-passage [style*=" color"] 
 tw-broken-link:not(:hover),tw-passage [style^=color][hover=true] 
 tw-broken-link:hover,tw-passage [style*=" color"][hover=true] 
-tw-broken-link:hover{color:inherit}tw-link.enchantment-mouseover,.link.enchantment-mouseover,tw-expression.enchantment-mouseover>
+tw-broken-link:hover{color:inherit}tw-link.enchantment-mouseover,
+.link.enchantment-mouseover,tw-expression.enchantment-mouseover>
 tw-link{color:inherit;font-weight:inherit;transition:none;cursor:inherit;border-bottom:2px dashed #999}
 tw-link.enchantment-mouseover:hover,tw-link.enchantment-mouseover:active,.link.enchantment-mouseover:hover,
 .link.enchantment-mouseover:active,tw-expression.enchantment-mouseover>
@@ -210,12 +212,19 @@ tw-link:hover,tw-expression.enchantment-mouseover>
 tw-link:active{color:inherit}
 tw-link.enchantment-mouseover.enchantment-button,.link.enchantment-mouseover.enchantment-button,
 tw-expression.enchantment-mouseover>
-tw-link.enchantment-button{border-style:dashed}tw-link.enchantment-mouseout,.link.enchantment-mouseout,tw-expression.enchantment-mouseout>
+tw-link.enchantment-button{border-style:dashed}
+tw-link.enchantment-mouseout,.link.enchantment-mouseout,tw-expression.enchantment-mouseout>
 tw-link{color:inherit;font-weight:inherit;transition:none;cursor:inherit;border:rgba(64,149,191,.6) 1px solid;border-radius:.2em}
-tw-link.enchantment-mouseout:hover,tw-link.enchantment-mouseout:active,.link.enchantment-mouseout:hover,.link.enchantment-mouseout:active,tw-expression.enchantment-mouseout>tw-link:hover,tw-expression.enchantment-mouseout>tw-link:active{color:inherit}tw-link.enchantment-mouseout:hover,.link.enchantment-mouseout:hover,
-tw-expression.enchantment-mouseout>tw-link:hover{background-color:rgba(175,197,207,.75);border:rgba(0,0,0,0) 1px solid}
+tw-link.enchantment-mouseout:hover,
+tw-link.enchantment-mouseout:active,.link.enchantment-mouseout:hover,.link.enchantment-mouseout:active,
+tw-expression.enchantment-mouseout>
+tw-link:hover,tw-expression.enchantment-mouseout>tw-link:active{color:inherit}
+tw-link.enchantment-mouseout:hover,.link.enchantment-mouseout:hover,
+tw-expression.enchantment-mouseout>
+tw-link:hover{background-color:rgba(175, 197, 207, 0.418);border:rgba(236, 150, 150, 0) 1px solid}
 tw-link.enchantment-dblclick,.link.enchantment-dblclick,
-tw-expression.enchantment-dblclick>tw-link{color:inherit;font-weight:inherit;transition:none;cursor:inherit;cursor:pointer;border:2px solid #999;border-radius:0}
+tw-expression.enchantment-dblclick>
+tw-link{color:inherit;font-weight:inherit;transition:none;cursor:inherit;cursor:pointer;border:2px solid #999;border-radius:0}
 tw-link.enchantment-dblclick:hover,
 tw-link.enchantment-dblclick:active,.link.enchantment-dblclick:hover,.link.enchantment-dblclick:active,
 tw-expression.enchantment-dblclick>
@@ -224,33 +233,49 @@ tw-expression.enchantment-dblclick>
 tw-link:active{color:inherit}
 tw-link.enchantment-dblclick:active,.link.enchantment-dblclick:active,
 tw-expression.enchantment-dblclick>
-tw-link:active{background-color:#999}tw-link.enchantment-button,.link.enchantment-button,.enchantment-button:not(.link) tw-link,.enchantment-button:not(.link) .link{border-radius:16px;border-style:solid;border-width:2px;text-align:center;padding:0px 8px;display:block}.enchantment-button{display:block}
+tw-link:active{background-color:#999}
+tw-link.enchantment-button,.link.enchantment-button,.enchantment-button:not(.link) 
+tw-link,.enchantment-button:not(.link) .link{border-radius:16px;border-style:solid;border-width:2px;text-align:center;padding:0px 8px;display:block}
+.enchantment-button{display:block}
 .enchantment-clickblock{cursor:pointer;width:100%;height:100%;display:block}
-.enchantment-clickblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;color:rgba(65,105,225,.5);transition:color .2s ease-in-out}.enchantment-clickblock>:not(tw-enchantment):hover::after{color:rgba(0,191,255,.5)}
-
+.enchantment-clickblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;color:rgba(65,105,225,.5);transition:color .2s ease-in-out}
+.enchantment-clickblock>:not(tw-enchantment):hover::after{color:rgba(0,191,255,.5)}
 .enchantment-clickblock>:not(tw-enchantment):active::after{color:rgba(222,78,59,.5)}
-.enchantment-clickblock>:not(tw-enchantment)::after{box-shadow:inset 0 0 0 .5vmax}.enchantment-clickblock>tw-passage::after,.enchantment-clickblock>tw-sidebar::after{box-shadow:0 0 0 .5vmax}.enchantment-mouseoverblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;border:2px dashed #999}
-.enchantment-mouseoutblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;border:rgba(64,149,191,.6) 2px solid}.enchantment-mouseoutblock:hover>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;
+.enchantment-clickblock>:not(tw-enchantment)::after{box-shadow:inset 0 0 0 .5vmax}
+.enchantment-clickblock>tw-passage::after,.enchantment-clickblock>tw-sidebar::after{box-shadow:0 0 0 .5vmax}
+.enchantment-mouseoverblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;border:2px dashed #999}
+.enchantment-mouseoutblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;border:rgba(64,149,191,.6) 2px solid}
+.enchantment-mouseoutblock:hover>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;
 pointer-events:none;background-color:rgba(175,197,207,.75);border:rgba(190, 73, 73, 0) 2px solid;
 border-radius:.2em}
 .enchantment-dblclickblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;cursor:pointer;border:2px solid #999}
 tw-dialog-links{padding-top:1.5em}
 tw-dialog-links tw-link{border-radius:16px;border-style:solid;border-width:2px;text-align:center;padding:0px 8px;display:block;display:inline-block}
 
-html{margin:0;height:100%;overflow-x:hidden}*,:before,:after{position:relative;box-sizing:inherit}
-body{margin:0;height:100%}
+html{
+    margin:0;height:100%;overflow-x:hidden}*,:before,:after{position:relative;box-sizing:inherit}
+
+body{
+margin:0;height:100%
+}
 
 tw-storydata{display:none}
-tw-story{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;font:100% Georgia,serif;box-sizing:border-box;width:100%;min-height:100%;font-size:1.5em;line-height:1.5em;padding:5% 5%;overflow:hidden;background-color:#000;color:#fff}
-tw-story [style*=content-box] *{box-sizing:border-box}@media(min-width: 576px){tw-story{padding:5% 20%}}
+tw-story{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;font:100% Times ,serif;
+    box-sizing:border-box;width:100%;min-height:100%;font-size:1.5em;line-height:1.5em;padding:5% 5%;overflow:hidden;
+    background-color:#f16c6c;color:#fff}
+tw-story [style*=content-box] *{box-sizing:border-box}
+@media(min-width: 576px){tw-story{padding:5% 20%}}
 tw-story tw-consecutive-br{display:block;height:1.6ex;visibility:hidden}
-tw-story select{background-color:rgba(0,0,0,0);font:inherit;border-style:solid;padding:2px}tw-story select:not([disabled]){color:inherit}
-tw-story textarea{resize:none;background-color:rgba(0,0,0,0);font:inherit;color:inherit;border-style:none;padding:2px}tw-story input[type=text]{background-color:rgba(0,0,0,0);font:inherit;color:inherit;border-style:none}
+tw-story select{background-color:rgba(0,0,0,0);font:inherit;border-style:solid;padding:2px}
+tw-story select:not([disabled]){color:inherit}
+tw-story textarea{resize:none;background-color:rgba(0,0,0,0);font:inherit;color:inherit;border-style:none;padding:2px}
+tw-story input[type=text]{background-color:rgba(0,0,0,0);font:inherit;color:inherit;border-style:none}
 tw-story input[type=checkbox]{transform:scale(1.5);margin:0 .5em .5em .5em;vertical-align:middle}
 tw-story tw-noscript{animation:appear .8s}
 tw-passage{display:block}
-tw-sidebar{text-align:center;display:-ms-flexbox;display:flex;-ms-flex-pack:justify;justify-content:space-between}
-@media(min-width: 576px)
+tw-sidebar{text-align:center;display:-ms-flexbox;display:flex;-ms-flex-pack:justify;justify-content:space-between;
+    background-color:#221717;color:#fff}
+@media(min-width: 500px)
 {tw-sidebar{left:-5em;width:3em;position:absolute;-ms-flex-direction:column;flex-direction:column}
 tw-enchantment[style*=width]>
 tw-sidebar{width:inherit}}
